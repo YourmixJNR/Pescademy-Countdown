@@ -30,3 +30,8 @@ body {
 .main-heading{
     font-size: 25px;
 }
+
+.ani-text {
+    background: var(--White);
+    color: var(--Blued);
+}
