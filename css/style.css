@@ -79,34 +79,32 @@ body {
 }
 
 .form-box input[type=email] {
-    color: #f0f8fa;
-    background-color: #4f4f51;
-    padding-left: 20px;
     width: 70%;
     height: 50px;
-    border: 0;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    padding-left: 20px;
+    border-radius: 0 !important;
+    outline: none;
+    color: var(--Blued);
+    background-color: var(--White);
 }
 
 input[type="email"]::-webkit-input-placeholder {
-    color: #f0f8fa !important;
+    color: var(--Pri-blued) !important;
 
 }
 
 .form-box button#subscribe-btn {
     padding: 5px 20px;
-    background-color: #76b328;
-    color: #f0f8fa;
+    background-color: var(--Pri-blued);
+    color: var(--White);
     border: 0;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
     transition: all .2s;
+    cursor: pointer;
 }
 
 
 .form-box button#subscribe-btn:hover {
-    background-color: #65a01a;
+    background-color: var(--Pri-blued);
 }
 
 /* Image */

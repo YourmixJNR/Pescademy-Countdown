@@ -33,12 +33,26 @@
     }
 
     .content-box {
-        width: 100%;
+        width: 90%;
     }
 
     .counter-box {
         padding-bottom: 1em;
         min-height: 80px;
         min-width: 80px;
+    }
+
+    .form-box input[type=email] {
+        width: 70%;
+        height: 50px;
+    }
+
+    .input-group-prepend {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-box button#subscribe-btn {
+        margin-top: 10px;
     }
 }
