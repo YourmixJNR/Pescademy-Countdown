@@ -4,13 +4,25 @@ require_once 'config.php';
 
 // Check if the subscribe button is clicked or set
 if(isset($_POST['subscribe'])) {
+
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 
-    $objDB->query("INSERT INTO subscribers (email) VALUES ('$email')");
+    // Check maybe the email already exist
+    $result = $objDB->query("SELECT * FROM subscribers WHERE email ='$email'");
 
-    // Display Subscribe successfully message
+    // Stop duplicate of email
+    if($result->num_rows) {
 
-    $_SESSION['msg'] = "Subscribe successfully 😎";
+        // Display Email already exist message
+        $_SESSION['msg'] = "Your Email already exist COMRADE 🚫";
+
+    }else{
+
+        $objDB->query("INSERT INTO subscribers (email) VALUES ('$email')");
+
+        // Display Subscribe successfully message
+        $_SESSION['msg'] = "Subscribe successfully 😎";
+    }
     
     header('Location:index.php');
 }
