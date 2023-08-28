@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&display=swap");
 
 :root {
-    --Plum: #073dbe;
-    --Tangerine: #ff9400;
+    --Blued: #045A7A;
+    --Pri-blued: #64A2C7;
     --White: #fff;
 }
 
@@ -18,13 +18,13 @@
 
 *::selection{
     background: var(--White);
-    color:var(--Plum);
+    color: var(--Blued);
 }
 
 body {
 	width: 100vw;
-    color: #fff;
-    background: var(--Plum);
+    color: var(--White);
+    background: var(--Blued);
 }
 
 main {
