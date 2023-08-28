@@ -72,6 +72,12 @@ body {
     color: var(--White);
 }
 
+/* Success Msg */
+
+.success-message {
+    margin: 2em 0;
+}
+
 /* Form Box */
 
 .form-box {

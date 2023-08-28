@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -47,6 +48,21 @@
                             <!--need to cut the code till here-->
 
                             <div class="clearfix"></div>
+
+                        </div>
+
+                        <!-- Success Message -->
+
+                        <div class="success-message">
+
+                            <?php 
+
+                                if(isset($_SESSION['msg'])) {
+                                    echo($_SESSION['msg']);
+                                    unset($_SESSION['msg']);
+                                }
+
+                            ?>
 
                         </div>
 
