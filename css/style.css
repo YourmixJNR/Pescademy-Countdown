@@ -27,7 +27,6 @@ body {
     background: var(--Blued);
 }
 
-main {
-    position: relative;
-    margin: auto;
+.main-heading{
+    font-size: 25px;
 }
