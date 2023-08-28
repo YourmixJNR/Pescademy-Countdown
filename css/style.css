@@ -72,6 +72,45 @@ body {
     color: var(--White);
 }
 
+/* Form Box */
+
+.form-box {
+    margin: 25px 0;
+}
+
+.form-box input[type=email] {
+    color: #f0f8fa;
+    background-color: #4f4f51;
+    padding-left: 20px;
+    width: 70%;
+    height: 50px;
+    border: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color: #f0f8fa !important;
+
+}
+
+.form-box button#subscribe-btn {
+    padding: 5px 20px;
+    background-color: #76b328;
+    color: #f0f8fa;
+    border: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all .2s;
+}
+
+
+.form-box button#subscribe-btn:hover {
+    background-color: #65a01a;
+}
+
+/* Image */
+
 .landing-img {
     background-image: url(../assets/PescaWelcome.png);
     background-position: center;

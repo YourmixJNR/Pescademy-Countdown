@@ -49,6 +49,21 @@
                             <div class="clearfix"></div>
 
                         </div>
+
+                        <div class="form-box">
+
+                            <form action="process.php" class="form" method="POST">
+
+                                <div class="input-group mb-2 mr-sm-2">
+                                    <input type="email" name="email" class="form-control" placeholder="Get Notify by Email" required>
+                                    <div class="input-group-prepend">
+                                        <button class="input-group-text" id="subscribe-btn" type="submit" name="subscribe">Subscribe</button>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
                         
                     </div>
 
