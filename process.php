@@ -18,7 +18,10 @@ if(isset($_POST['subscribe'])) {
 
     }else{
 
-        $objDB->query("INSERT INTO subscribers (email) VALUES ('$email')");
+        // Generating a unique code
+        $code = md5(crypt(rand(), 'aa'));
+
+        $objDB->query("INSERT INTO subscribers (email, reset_code) VALUES ('$email', '$code')");
 
         // Display Subscribe successfully message
         $_SESSION['msg'] = "Subscribe successfully 😎";

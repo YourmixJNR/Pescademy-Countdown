@@ -1,13 +1,13 @@
 # Pescademy Countdown
 
-Pescademy Countdown is a dynamic landing page project focused on learning and practicing web development skills. The project features a countdown timer, user registration, and email verification using JavaScript, PHP, and SQL.
+Pescademy Countdown is a dynamic landing page project focused on learning and practicing web development skills. The project features a countdown timer, user subscription, and email verification using JavaScript, PHP, and SQL.
 
 ## Description
 
 Pescademy Countdown serves as a platform for practicing and showcasing various web development concepts. The project includes:
 
 - A dynamic countdown timer using JavaScript.
-- User registration and email verification using PHP and SQL.
+- User subscription and email verification using PHP and SQL.
 - A landing page interface that engages users and captures their interest.
 
 ## Getting Started
@@ -23,7 +23,7 @@ To experience the Pescademy Countdown project:
 ## Features
 
 - Dynamic countdown timer showing the time remaining until a specified date.
-- User registration form for capturing user email addresses.
+- User subscription form for capturing user email addresses.
 - Email verification process to ensure user authenticity.
 - Simple and engaging landing page design.
 
