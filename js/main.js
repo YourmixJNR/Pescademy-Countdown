@@ -17,13 +17,13 @@ const animateText = (text) => {
 
 const aniTextFunc = () => {
     setTimeout(() => {
-        animateText("Scholarship");
+        animateText("Provide");
     }, 0);
     setTimeout(() => {
-        animateText("Learn");
+        animateText("Scholarship");
     }, 4000);
     setTimeout(() => {
-        animateText("Grow");
+        animateText("Funding");
     }, 8000);
 };
 

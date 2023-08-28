@@ -23,15 +23,58 @@
 
 body {
 	width: 100vw;
+    font-size: 16px;
     color: var(--White);
     background: var(--Blued);
 }
 
+/* Content box */
+
 .main-heading{
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 .ani-text {
     background: var(--White);
     color: var(--Blued);
+}
+
+.content-box {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.counter-box {
+    display: inline-block;
+    min-height: 110px;
+    min-width: 110px;
+    padding-top: 1em;
+    text-align: center;
+    border: 1px solid var(--White);
+    background: var(--Pri-blued);
+}
+
+.counter-box span {
+    display: block;
+}
+
+.counter-number {
+    font-size: 2rem;
+    color: var(--White);
+}
+
+.counter-text {
+    font-size: 1rem;
+    color: var(--White);
+}
+
+.landing-img {
+    background-image: url(../assets/PescaWelcome.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
