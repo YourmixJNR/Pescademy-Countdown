@@ -15,7 +15,4 @@ if($objDB->connect_errno){
     die('Connection failed');
 }
 
-// PHPMailer
-require_once 'PHPMailer-master/PHPMailerAutoload.php';
-
 ?>
