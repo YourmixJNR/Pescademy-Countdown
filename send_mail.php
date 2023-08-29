@@ -8,10 +8,10 @@ function send_mail($detail=array()){
         $mail = new PHPMailer(true); 
         //$mail->SMTPDebug = 2;                                 // Enable verbose debug output
         $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'your-smtp-server';  // Specify main and backup SMTP servers
+        $mail->Host = 'smtp.postmarkapp.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'your-account-username';                 // SMTP username
-        $mail->Password = 'your-account-password';                           // SMTP password
+        $mail->Username = '683d9dd1-6bc0-49c4-b354-6f8470f40a5d';                 // SMTP username
+        $mail->Password = '683d9dd1-6bc0-49c4-b354-6f8470f40a5d';                           // SMTP password
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to
 
