@@ -18,4 +18,7 @@ if($objDB->connect_errno){
 // PHPMailer
 require_once 'PHPMailer-master/PHPMailerAutoload.php';
 
+// Access send_mail.php
+require_once 'send_mail.php';
+
 ?>

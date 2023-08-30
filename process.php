@@ -24,7 +24,16 @@ if(isset($_POST['subscribe'])) {
         $objDB->query("INSERT INTO subscribers (email, reset_code) VALUES ('$email', '$code')");
 
         // Display Subscribe successfully message
-        $_SESSION['msg'] = "Subscribe successfully 😎";
+        $_SESSION['msg'] = "Please, check your email to confirm 😎";
+
+        $message = "Hi! You just subscribed for our ebook. In order to get that you need to verify your email. Please, verify by clicking <a href='http://localhost/jscourse/verify_email.php?code=$code'>here</a>.";
+
+            send_mail([
+                'to' => $email,
+                'from' => 'Creative Tools',
+                'message' => $message,
+                'subject' => 'Verify Email'
+            ]);     
     }
     
     header('Location:index.php');
