@@ -33,7 +33,7 @@ if(isset($_POST['subscribe'])) {
                 'from' => 'Creative Tools',
                 'message' => $message,
                 'subject' => 'Verify Email'
-            ]);     
+            ]);    
     }
     
     header('Location:index.php');
