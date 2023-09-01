@@ -26,17 +26,19 @@ if(isset($_POST['subscribe'])) {
         // Display Subscribe successfully message
         $_SESSION['msg'] = "Please, check your email to confirm 😎";
 
-        $message = "Hi! You just subscribed for our ebook. In order to get that you need to verify your email. Please, verify by clicking <a href='http://localhost/jscourse/verify_email.php?code=$code'>here</a>.";
+        // Verify email message
+        $message = "Hi! Please, verify by clicking <a href='http://localhost/pescademy-countdown/verify_email.php?code=$code'>here</a>.";
 
             send_mail([
                 'to' => $email,
-                'from' => 'Creative Tools',
+                'from' => 'Pescademy Scholarship',
                 'message' => $message,
                 'subject' => 'Verify Email'
             ]);    
     }
     
     header('Location:index.php');
+
 }
 
 ?>
