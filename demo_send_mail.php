@@ -3,7 +3,6 @@
 //Send the email mail
 function send_mail($detail=array()){
 
-
     if(!empty($detail['to']) && !empty($detail['message']) && !empty($detail['subject']) && !empty($detail['from'])){
         $mail = new PHPMailer(true); 
         //$mail->SMTPDebug = 2;                                 // Enable verbose debug output
