@@ -24,14 +24,21 @@ if(isset($_GET['code'])) {
 
             send_mail([
                 'to' => $data->email,
-                'from' => 'Creative Tools',
+                'from' => 'Pescademy Scholarship',
                 'message' => $message,
-                'subject' => 'Verify Email'
+                'subject' => 'Download Package'
             ]);
 
+            //Send message back to home page
+            $_SESSION['msg'] = 'Congratulations! package has been sent to your email address. Please, check your email and download your free package.';
+            
+        }else {
+            $_SESSION['msg'] = "Record not found";
         }
 
     }
+
+    header('Location:index.php');
 
 }
 
