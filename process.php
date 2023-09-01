@@ -8,7 +8,7 @@ if(isset($_POST['subscribe'])) {
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 
     // Check maybe the email already exist
-    $result = $objDB->query("SELECT * FROM subscribers WHERE email ='$email'");
+    $result = $objDB->query("SELECT * FROM subscribers WHERE email='$email'");
 
     // Stop duplicate of email
     if($result->num_rows) {

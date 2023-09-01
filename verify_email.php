@@ -14,7 +14,7 @@ if(isset($_GET['code'])) {
         
         $data = $result->fetch_object();
 
-        if($data->reset_code=$code) {
+        if($data->reset_code==$code) {
 
             //Update the record of subscriber from is_active 0 to 1 and reset_code to empty
             $objDB->query("UPDATE subscribers SET is_active=1, reset_code='' WHERE reset_code='$code'");
@@ -31,7 +31,7 @@ if(isset($_GET['code'])) {
 
             //Send message back to home page
             $_SESSION['msg'] = 'Congratulations! package has been sent to your email address. Please, check your email and download your free package.';
-            
+
         }else {
             $_SESSION['msg'] = "Record not found";
         }
