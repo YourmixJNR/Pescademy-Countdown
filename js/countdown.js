@@ -1,9 +1,4 @@
 // Set the release date
-
-// Debugging 
-
-alert('Hello World');
-
 let releaseDate = new Date ('Oct 20, 2023 05:53:07');
 
 // Create Interval Function
